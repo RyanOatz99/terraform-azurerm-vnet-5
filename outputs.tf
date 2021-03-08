@@ -7,9 +7,9 @@ output "vnet_name" {
 }
 
 output "vnet_address_space" {
-    value = azurerm_virtual_network.vnet.*.address_space
+    value = azurerm_virtual_network.vnet.address_space
 }
 
 output "vnet_subnet" {
-    value = azurerm_virtual_network.subnet.*.id
+    value = azurerm_subnet.subnet.*.id
 }
