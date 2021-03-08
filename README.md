@@ -87,7 +87,8 @@ provider "azurerm" {
 }
 
 module "vnet" {
-    source              = "Azure/vnet/azurerm"
+    source              = "cdiscianno/vnet/azurerm"
+    version             = "1.1.0"
     resource_group_name = var.resource_group_name
     vnet_name           = var.vnet_name
     address_space       = var.address_space
