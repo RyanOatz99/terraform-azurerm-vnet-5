@@ -95,6 +95,7 @@ module "vnet" {
     subnet_names        = var.subnet_names
     subnet_prefixes     = var.subnet_prefixes
 }
+```
 
 ## Authors
 
