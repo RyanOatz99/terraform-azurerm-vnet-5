@@ -7,7 +7,7 @@ variable "vnet_name" {
 }
 
 variable "address_space" {
-    type        = "list(string)"
+    type        = list(string)
     description = "The address space to use for network"
     default     = ["10.0.0.0/16"]
 }
