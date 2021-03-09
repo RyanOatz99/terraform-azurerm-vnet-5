@@ -26,3 +26,11 @@ variable "subnet_prefixes" {
     description = "The address prefixes for each subnet"
     default     = ["10.0.0.0/24"] 
 }
+
+variable "tags" {
+    type        = map(string)
+    description = "Map tags to vnet"
+    default     = {
+        Environment = "Lab"
+    }
+}

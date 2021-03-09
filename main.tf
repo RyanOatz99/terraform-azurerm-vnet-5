@@ -8,6 +8,7 @@ resource azurerm_virtual_network "vnet" {
     location            = data.azurerm_resource_group.rg.location
     address_space       = var.address_space
     dns_servers         = var.dns_servers
+    tags                = var.tags
 }
 
 resource azurerm_subnet "subnet" {
